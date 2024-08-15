@@ -9,7 +9,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// Remove these lines if not using reportWebVitals
-// import reportWebVitals from './reportWebVitals';
-// reportWebVitals();
