@@ -1,10 +1,9 @@
-/* General Styles */
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
   box-sizing: border-box;
 }
 
@@ -13,7 +12,7 @@ body, html {
   background-color: #1e1e1e;
   min-height: 100vh;
   width: 100%;
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  overflow-x: auto; 
 }
 
 .sidebar {
@@ -28,22 +27,22 @@ body, html {
 }
 
 .main-content {
-  flex-grow: 1; /* Take up remaining space next to the sidebar */
+  flex-grow: 1; 
   padding: 20px;
-  margin-left: 250px; /* Account for the width of the sidebar */
+  margin-left: 250px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 0; /* Ensure the content doesn't overflow its container */
-  overflow: hidden; /* Prevent content overflow */
-  max-width: calc(100% - 250px); /* Ensure the main content doesn't overlap the sidebar */
+  min-width: 0; 
+  overflow: hidden; 
+  max-width: calc(100% - 250px); 
 }
 
 
-/* Centering the content and making it responsive */
+
 .title-container {
   width: 100%;
-  max-width: 1200px; /* Adjust the max-width to control the centering */
+  max-width: 1200px; 
   background: linear-gradient(135deg, #4b4b4b, #1f1f1f);
   padding: 20px;
   text-align: center;
@@ -71,7 +70,7 @@ body, html {
   max-width: 1200px;
   padding: 10px;
   box-sizing: border-box;
-  justify-items: center; /* Center the items within the grid */
+  justify-items: center; 
 }
 
 .product-card {
@@ -82,8 +81,8 @@ body, html {
   text-align: center;
   color: #ccc;
   transition: transform 0.2s ease;
-  width: 100%; /* Ensure product card takes up the full width of the grid column */
-  max-width: 300px; /* Limit max width for better scaling */
+  width: 100%; 
+  max-width: 300px; 
 }
 
 .product-card:hover {
@@ -93,7 +92,7 @@ body, html {
 .product-image {
   width: 100%;
   height: auto;
-  max-height: 150px; /* Ensure image fits well */
+  max-height: 150px; 
   border-radius: 5px;
   margin-bottom: 10px;
   object-fit: cover;
@@ -115,21 +114,21 @@ body, html {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .homepage {
-    flex-direction: column; /* Stack sidebar and main content vertically */
+    flex-direction: column; 
   }
 
   .sidebar {
     width: 100%;
     position: relative;
     height: auto;
-    border-right: none; /* Remove the border when stacked */
-    border-bottom: 2px solid #333; /* Add a border at the bottom instead */
+    border-right: none; 
+    border-bottom: 2px solid #333; 
   }
 
   .main-content {
-    margin-left: 0; /* Remove the margin left since sidebar is stacked */
+    margin-left: 0; 
     padding: 10px;
-    max-width: 100%; /* Ensure the content takes full width */
+    max-width: 100%; 
   }
 
   .home-title {
@@ -203,8 +202,8 @@ body, html {
   position: fixed;
   height: 100%;
   overflow-y: auto;
-  border-right: 2px solid #333; /* Add this line for the outline */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add this for some depth */
+  border-right: 2px solid #333; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .faction-title {
